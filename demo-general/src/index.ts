@@ -62,31 +62,31 @@ async function registerPlugins() {
   await plugins.register(UndoRedoPlugin);
 
   // 注册中英文切换
-  await plugins.register(ZhEnPlugin);
+  // await plugins.register(ZhEnPlugin);
 
-  await plugins.register(SetRefPropPlugin);
+  // await plugins.register(SetRefPropPlugin);
 
-  await plugins.register(SimulatorResizerPlugin);
+  // await plugins.register(SimulatorResizerPlugin);
 
-  await plugins.register(LoadIncrementalAssetsWidgetPlugin);
+  // await plugins.register(LoadIncrementalAssetsWidgetPlugin);
 
   // 插件参数声明 & 传递，参考：https://lowcode-engine.cn/site/docs/api/plugins#%E8%AE%BE%E7%BD%AE%E6%8F%92%E4%BB%B6%E5%8F%82%E6%95%B0%E7%89%88%E6%9C%AC%E7%A4%BA%E4%BE%8B
-  await plugins.register(DataSourcePanePlugin, {
-    importPlugins: [],
-    dataSourceTypes: [
-      {
-        type: 'fetch',
-      },
-      {
-        type: 'jsonp',
-      }
-    ]
-  });
+  // await plugins.register(DataSourcePanePlugin, {
+  //   importPlugins: [],
+  //   dataSourceTypes: [
+  //     {
+  //       type: 'fetch',
+  //     },
+  //     {
+  //       type: 'jsonp',
+  //     }
+  //   ]
+  // });
 
-  await plugins.register(CodeEditorPlugin);
+  // await plugins.register(CodeEditorPlugin);
 
   // 注册出码插件
-  await plugins.register(CodeGenPlugin);
+  // await plugins.register(CodeGenPlugin);
 
   await plugins.register(SaveSamplePlugin);
 
@@ -101,6 +101,7 @@ async function registerPlugins() {
 };
 
 (async function main() {
+  // debugger
   await registerPlugins();
 
   init(document.getElementById('lce-container')!, {

@@ -20,6 +20,7 @@ const SamplePreview = () => {
   const [data, setData] = useState({});
 
   async function init() {
+    // debugger
     const scenarioName = getScenarioName();
     const packages = getPackagesFromLocalStorage(scenarioName);
     const projectSchema = getProjectSchemaFromLocalStorage(scenarioName);
